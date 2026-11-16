@@ -1,72 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Pet Adoption</title>
   <link rel="stylesheet" href="style.css">
-    <script src="working.js"></script>
-   
-
-
+  <script src="working.js"></script>
 </head>
 <body>
- 
 
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showPage('home')">Home</a></li>
+      <li><a href="#" onclick="showPage('our-pets')">Our Pets</a></li>
+    </ul>
+  </nav>
 
-  <!-- 1. Heading -->
-  <h1> Pet Adoption</h1>
+  <!-- 1. HOME PAGE SECTION -->
+  <section id="home">
+    <h1>Welcome to Pet Adoption</h1>
+    <p class="description">
+      This website is dedicated to helping you find and adopt your new best friend. Open your heart and home to a loving pet today, and give them the forever family they deserve!
+    </p>
 
-  <!-- 2. Picture -->
-  <img src="aap-header.png" alt="Description of the image" width="400">
+    <!-- Animated Picture Slideshow -->
+    <div class="slideshow">
+      <!-- Replace these placeholders with your actual pet images -->
+      <img src="images/slide1.jpg" alt="Happy Pet 1" class="slide">
+      <img src="images/slide2.jpg" alt="Happy Pet 2" class="slide">
+      <img src="images/slide3.jpg" alt="Happy Pet 3" class="slide">
+    </div>
+  </section>
 
-  <h2>Pets Profile</h2>
-  <h3>Pet 1 </h3>
-  <img src="images\images.png"  alt="Description of the iamge "  width="200">
-  <!-- 3. Table -->
-  <table border="1">
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Breed</th>
-    </tr>
-    <tr>
-      <td>German Shepherd</td>
-      <td> 3 Years </td>
-      <td> West German Show Line</td>
-    </tr>
+  <!-- 2. OUR PETS SECTION (Your existing code) -->
+  <section id="our-pets" style="display: none;">
+    <h1>Our Pets</h1>
+    <img class="center-img" src="aap-header.png" alt="Description of the image" width="400">
+
+    <h2>Pets Profile</h2>
     
-    <tr>
-  <button onclick=" adoptgerman()">Adopt me </button><br>
-  </table>
-  <table border="1">
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Breed</th>
-    </tr>
-    <tr>
-    <img src="images\labra.jpg" alt="Description of the iamge "  width="400">
-    <tr>
-      <td>Labrador Retriever</td>
-      <td>5 Years </td>
-      <td> American </td>  
-    </tr>
-  <button onclick=" labra()">Adopt me </button><br>
-  </table>
-  <table border ="1">
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Breed</th>
-    </tr>
-    <tr>
-    <img src="images\image.jpg" alt="Description of the iamge "  width="400">
-    <tr>
-      <td>Golden Retrievers</td>
-      <td>10 Years </td>
-      <td> Golden </td>  
-    </tr>
-  </table>
- <button onclick=" golden()">Adopt me </button><br>
+    <!-- Pet 1 -->
+    <h3>Pet 1</h3>
+    <img class="center-img" src="images\images.png" alt="Description of the image" width="200">
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Breed</th>
+      </tr>
+      <tr>
+        <td>German Shepherd</td>
+        <td>3 Years</td>
+        <td>West German Show Line</td>
+      </tr>
+    </table>
+    <button onclick="adoptgerman()">Adopt me</button>
+
+    <!-- Pet 2 -->
+    <h3>Pet 2</h3>
+    <img class="center-img" src="images\labra.jpg" alt="Description of the image" width="400">
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Breed</th>
+      </tr>
+      <tr>
+        <td>Labrador Retriever</td>
+        <td>5 Years</td>
+        <td>American</td>  
+      </tr>
+    </table>
+    <button onclick="labra()">Adopt me</button>
+
+    <!-- Pet 3 -->
+    <h3>Pet 3</h3>
+    <img class="center-img" src="images\image.jpg" alt="Description of the image" width="400">
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Breed</th>
+      </tr>
+      <tr>
+        <td>Golden Retrievers</td>
+        <td>10 Years</td>
+        <td>Golden</td>  
+      </tr>
+    </table>
+    <button onclick="golden()">Adopt me</button>
+  </section>
 
 </body>
 </html>
