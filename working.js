@@ -10,12 +10,14 @@ function adoptgerman() {
     window.alert("Golden retiver is adopt. Thanks for adotping");
   }
 
-  // --- Paste the new code right here at the very bottom --- //
+  // --- Updated Navigation Logic --- //
   function showPage(pageId) {
-    // Hide both sections
+    // 1. Hide all 4 sections
     document.getElementById('home').style.display = 'none';
     document.getElementById('our-pets').style.display = 'none';
+    document.getElementById('how-to-adopt').style.display = 'none';
+    document.getElementById('contact').style.display = 'none';
     
-    // Show the requested section
+    // 2. Show only the requested section
     document.getElementById(pageId).style.display = 'block';
   }

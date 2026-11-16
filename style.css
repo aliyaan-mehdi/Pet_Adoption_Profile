@@ -206,3 +206,35 @@ button:hover {
   box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5); /* Stronger glow on hover */
   transform: scale(1.05); /* Button slightly grows when clicked */
 }
+/* --- Info Boxes for New Pages --- */
+.info-box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #444;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.steps-list {
+  text-align: left;
+  padding-left: 25px;
+}
+
+.steps-list li {
+  margin-bottom: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
