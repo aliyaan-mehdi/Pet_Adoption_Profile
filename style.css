@@ -137,3 +137,72 @@ button:hover {
   background-color: #ffcc00;
   color: navy;
 }
+/* --- Modern Pet Cards Layout --- */
+.pet-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.pet-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow behind the card */
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+/* Make the card "lift up" when you hover over it */
+.pet-card:hover {
+  transform: translateY(-10px);
+}
+
+.pet-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Ensures images fit the box perfectly without stretching */
+}
+
+.pet-info {
+  padding: 20px;
+}
+
+.pet-info h3 {
+  margin: 0 0 10px;
+  color: navy;
+  font-size: 22px;
+}
+
+.pet-info p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+/* --- Stylish Adopt Button --- */
+.btn-adopt {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #ff9800, #ff5722); /* Orange gradient */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded pill shape */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3); /* Glow effect */
+  transition: all 0.3s ease;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Button Hover Animation */
+.btn-adopt:hover {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5); /* Stronger glow on hover */
+  transform: scale(1.05); /* Button slightly grows when clicked */
+}
