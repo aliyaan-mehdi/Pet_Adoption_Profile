@@ -31,63 +31,50 @@
     </div>
   </section>
 
-  <!-- 2. OUR PETS SECTION (Your existing code) -->
+  
+
+    <!-- 2. OUR PETS SECTION -->
   <section id="our-pets" style="display: none;">
     <h1>Our Pets</h1>
-    <img class="center-img" src="aap-header.png" alt="Description of the image" width="400">
+    <p class="description">Meet our wonderful companions waiting for a forever home.</p>
 
-    <h2>Pets Profile</h2>
-    
-    <!-- Pet 1 -->
-    <h3>Pet 1</h3>
-    <img class="center-img" src="images\images.png" alt="Description of the image" width="200">
-    <table border="1">
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Breed</th>
-      </tr>
-      <tr>
-        <td>German Shepherd</td>
-        <td>3 Years</td>
-        <td>West German Show Line</td>
-      </tr>
-    </table>
-    <button onclick="adoptgerman()">Adopt me</button>
+    <!-- Pet Cards Container -->
+    <div class="pet-container">
+      
+      <!-- Pet 1 -->
+      <div class="pet-card">
+        <img src="images/images.png" alt="German Shepherd">
+        <div class="pet-info">
+          <h3>German Shepherd</h3>
+          <p><strong>Age:</strong> 3 Years</p>
+          <p><strong>Breed:</strong> West German Show Line</p>
+          <button class="btn-adopt" onclick="adoptgerman()">Adopt Me</button>
+        </div>
+      </div>
 
-    <!-- Pet 2 -->
-    <h3>Pet 2</h3>
-    <img class="center-img" src="images\labra.jpg" alt="Description of the image" width="400">
-    <table border="1">
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Breed</th>
-      </tr>
-      <tr>
-        <td>Labrador Retriever</td>
-        <td>5 Years</td>
-        <td>American</td>  
-      </tr>
-    </table>
-    <button onclick="labra()">Adopt me</button>
+      <!-- Pet 2 -->
+      <div class="pet-card">
+        <img src="images/labra.jpg" alt="Labrador Retriever">
+        <div class="pet-info">
+          <h3>Labrador Retriever</h3>
+          <p><strong>Age:</strong> 5 Years</p>
+          <p><strong>Breed:</strong> American</p>
+          <button class="btn-adopt" onclick="labra()">Adopt Me</button>
+        </div>
+      </div>
 
-    <!-- Pet 3 -->
-    <h3>Pet 3</h3>
-    <img class="center-img" src="images\image.jpg" alt="Description of the image" width="400">
-    <table border="1">
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Breed</th>
-      </tr>
-      <tr>
-        <td>Golden Retrievers</td>
-        <td>10 Years</td>
-        <td>Golden</td>  
-      </tr>
-    </table>
-    <button onclick="golden()">Adopt me</button>
+      <!-- Pet 3 -->
+      <div class="pet-card">
+        <img src="images/image.jpg" alt="Golden Retriever">
+        <div class="pet-info">
+          <h3>Golden Retriever</h3>
+          <p><strong>Age:</strong> 10 Years</p>
+          <p><strong>Breed:</strong> Golden</p>
+          <button class="btn-adopt" onclick="golden()">Adopt Me</button>
+        </div>
+      </div>
+
+    </div>
   </section>
 
 </body>
