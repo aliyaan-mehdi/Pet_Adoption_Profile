@@ -238,3 +238,38 @@ hr {
   background: #ddd;
   margin: 20px 0;
 }
+/* --- Adopted Pet Styling --- */
+.adopted-card {
+  position: relative; /* Allows us to position the badge perfectly */
+  opacity: 0.85; /* Slightly dims the card to show it's inactive */
+}
+
+/* The red diagonal badge in the top right corner */
+.badge {
+  position: absolute;
+  top: 20px;
+  right: -35px;
+  background-color: #e53935; /* Strong red color */
+  color: white;
+  padding: 8px 40px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  transform: rotate(45deg); /* Tilts the text */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+/* The grey, unclickable button */
+.btn-disabled {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #d3d3d3; /* Light grey */
+  color: #777; /* Darker grey text */
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: not-allowed; /* Shows a red circle-slash cursor on hover */
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
